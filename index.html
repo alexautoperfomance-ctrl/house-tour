@@ -1,0 +1,26 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="icon" href="data:,"><title>3D-тур по дому · 304 м²</title><link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/addons/"}}</script>
+</head><body>
+<div id="loader"><div>Загрузка модели… <span id="pct">0%</span></div></div>
+<div id="ui">
+ <div class="row"><b>Дом 304 м²</b>
+  <button id="mOrbit" class="on">Облёт</button><button id="mWalk">Прогулка</button>
+  <button id="menuBtn">☰ Помещения</button></div>
+ <div id="panel" class="hidden">
+  <div class="grp">Снаружи</div><div id="ext"></div>
+  <div class="grp">1 этаж</div><div id="gf"></div>
+  <div class="grp">2 этаж</div><div id="sf"></div>
+  <div class="grp">Настройки</div>
+  <label><input type="checkbox" id="hide2"> Скрыть 2 этаж / крышу</label>
+  <label><input type="checkbox" id="evening"> Вечер (тёплый свет)</label>
+  <label>Тени <select id="shq"><option value="0">выкл</option><option value="1024">низкие</option><option value="2048" selected>средние</option><option value="4096">высокие</option></select></label>
+  <label>Качество <select id="pr"><option value="0.75">низкое</option><option value="1" selected>среднее</option><option value="2">высокое</option></select></label>
+ </div>
+</div>
+<div id="room"></div>
+<div id="help"></div>
+<div id="joy"><div id="knob"></div></div>
+<script type="module" src="app.js"></script>
+</body></html>

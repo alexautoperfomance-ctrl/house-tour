@@ -1,0 +1,14 @@
+html,body{margin:0;height:100%;overflow:hidden;background:#9bb;font:14px system-ui,sans-serif;color:#fff;touch-action:none}
+canvas{display:block}
+#ui{position:fixed;top:8px;left:8px;max-width:calc(100vw - 16px);z-index:5}
+.row{display:flex;gap:6px;align-items:center;flex-wrap:wrap;background:rgba(20,24,28,.75);padding:6px 8px;border-radius:10px}
+button{background:#2c333a;color:#fff;border:1px solid #555;border-radius:7px;padding:6px 10px;font:inherit;cursor:pointer}
+button.on{background:#c98a3c;border-color:#c98a3c}
+#panel{margin-top:6px;background:rgba(20,24,28,.82);padding:8px;border-radius:10px;max-height:70vh;overflow:auto;width:290px;max-width:calc(100vw - 32px)}
+#panel button{margin:2px;padding:4px 8px;font-size:13px}#panel label{display:block;margin:5px 0}
+.grp{color:#e8b56a;margin-top:6px;font-weight:600}.hidden{display:none}
+#room{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);background:rgba(20,24,28,.7);padding:5px 12px;border-radius:8px;pointer-events:none}
+#help{position:fixed;bottom:12px;right:12px;background:rgba(20,24,28,.6);padding:5px 10px;border-radius:8px;font-size:12px;max-width:45vw;pointer-events:none}
+#joy{position:fixed;left:24px;bottom:50px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.4);display:none;z-index:4}
+#knob{position:absolute;left:35px;top:35px;width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,.6)}
+#loader{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#223;z-index:9;font-size:18px}
